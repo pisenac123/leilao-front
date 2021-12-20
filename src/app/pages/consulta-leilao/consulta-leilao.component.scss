@@ -1,0 +1,49 @@
+*,
+h1 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.full-width-table {
+    width: 100%;
+}
+
+.btn-efetuar-lance,
+.btn-excluir {
+    width: 130px;
+    border: none;
+}
+
+.btn-editar,
+.btn-excluir {
+    width: 80px;
+}
+
+.btn-editar {
+    background: #2f89c5;
+    color: #fff;
+}
+
+.btn-efetuar-lance {
+    background: #1d9677;
+    color: #fff;
+}
+
+.btn-excluir {
+    background: #e05f23;
+    color: #fff;
+}
+
+::ng-deep .warning {
+    background: rgb(224, 221, 50);
+    color: #000;
+}
+
+ ::ng-deep .erro {
+    background: #e01b15;
+    color: #fff;
+}
+
+::ng-deep .sucesso {
+    background: #07921e;
+    color: #fff;
+}

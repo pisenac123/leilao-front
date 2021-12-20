@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Dados do Leilão</h1>
+<div mat-dialog-content>
+    <mat-label>
+        <b>{{data.nome}}</b> <br/> Valor inicial: R$ {{data.valorInicial}} <br/> {{data.dataAbertura}}
+    </mat-label>
+    <p style="color: #fff;">.</p>
+
+
+    <mat-form-field appearance="fill">
+
+        <mat-label>Informe seu nome</mat-label>
+        <input matInput [(ngModel)]="data.usuario">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Valor (R$)</mat-label>
+        <input matInput [(ngModel)]="data.valor">
+    </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancelar</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Confirmar</button>
+</div>

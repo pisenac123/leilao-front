@@ -1,0 +1,29 @@
+<app-header></app-header>
+<br/>
+<div class="container">
+    <form [formGroup]="form">
+
+        <h1 style="padding:8px; width: 94%; margin-left: 24px; background: #ebe9e9; border-radius: 2px;"> {{titulo}}</h1>
+
+        <mat-form-field style="width: 95%; margin-left: 25px;">
+            <input formControlName="nome" style="height: 30px;" class="toolbar-search" maxlength="14" type="text" matInput />
+            <mat-placeholder>Nome do leilão <span>*</span></mat-placeholder>
+        </mat-form-field>
+
+        <mat-form-field style="width: 95%; margin-left: 25px;">
+            <input formControlName="valorInicial" style="height: 30px;" class="toolbar-search" maxlength="14" type="text" matInput />
+            <mat-placeholder>Valor inicial (R$) <span>*</span></mat-placeholder>
+        </mat-form-field>
+
+        <mat-form-field style="width: 95%; margin-left: 25px;">
+            <input formControlName="usuario" style="height: 30px;" class="toolbar-search" maxlength="14" type="text" matInput />
+            <mat-placeholder>Nome do usuário <span>*</span></mat-placeholder>
+        </mat-form-field>
+
+        <table style="float:right; margin-right: 46px; border: none;">
+            <tr>
+                <button (click)="salvarLeilao()" mat-stroked-button class="btn">SALVAR</button>
+            </tr>
+        </table>
+    </form>
+</div>
